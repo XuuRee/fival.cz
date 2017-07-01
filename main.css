@@ -44,6 +44,15 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-size: 1em;
 }
+
+.blink {
+    color: #DC143C;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+    50% { opacity: 0; }
+}
 /*
 a.reference {
     color: red;
