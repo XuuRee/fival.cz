@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-size: 1em; /* 24px */
 }
-
+/*
 a.reference {
     color: red;
     text-decoration: none;
@@ -53,14 +53,44 @@ a.reference {
 a.reference:hover {
     text-decoration: underline;
 }
-
+*/
 hr {
     border: 0;
     border-top: 1px solid #eee;
     margin: 20px 0;
 }
 
-/*
+/**
+ * Menu
+ */
+#menu {
+    font-size: 1.25em;
+}
+
+#link{
+    position: relative;
+}
+
+#link:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #DC143C;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+ 
+#link:hover:after{
+    width: 100%;
+    left: 0;
+    background: #DC143C;
+}
+
+/**
  * Tags;
  */
 .tags {
