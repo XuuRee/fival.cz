@@ -184,3 +184,15 @@ hr {
     background: #037FBD;
     color: white;
 }
+
+@media screen and (max-width: 480px) {
+  #menu {
+    font-size: 0.85em;
+    float: none;
+    width: auto;
+  }
+  
+  h1 {
+    font-size: 2.75em;
+  }
+}
