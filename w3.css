@@ -151,6 +151,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 .w3-cyan,.w3-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
 .w3-blue-grey,.w3-hover-blue-grey:hover,.w3-blue-gray,.w3-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
 .w3-green,.w3-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.w3-mgreen,.w3-hover-mgreen:hover{color:#fff!important;background-color:#56DC95!important}
 .w3-light-green,.w3-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
 .w3-indigo,.w3-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
 .w3-khaki,.w3-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
@@ -203,6 +204,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 .w3-border-red,.w3-hover-border-red:hover{border-color:#f44336!important}
 .w3-border-darkred,.w3-hover-border-darkred:hover{border-color:#DC143C!important}
 .w3-border-green,.w3-hover-border-green:hover{border-color:#4CAF50!important}
+.w3-border-mgreen,.w3-hover-border-mgreen:hover{border-color:#56DC95!important}
 .w3-border-blue,.w3-hover-border-blue:hover{border-color:#2196F3!important}
 .w3-border-yellow,.w3-hover-border-yellow:hover{border-color:#ffeb3b!important}
 .w3-border-white,.w3-hover-border-white:hover{border-color:#fff!important}

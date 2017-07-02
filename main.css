@@ -2,7 +2,6 @@
 
 html, body {
     font-family: 'Fira Sans', sans-serif;
-    color: black;
     line-height: 1.5;
 }
 
@@ -53,16 +52,7 @@ p {
 @keyframes blinker {  
     50% { opacity: 0; }
 }
-/*
-a.reference {
-    color: red;
-    text-decoration: none;
-}
 
-a.reference:hover {
-    text-decoration: underline;
-}
-*/
 hr {
     border: 0;
     border-top: 1px solid #eee;
@@ -76,6 +66,7 @@ hr {
     font-size: 1.15em;
 }
 
+/* For 'darkred' background color */
 #link{
     position: relative;
 }
@@ -97,6 +88,29 @@ hr {
     width: 100%;
     left: 0;
     background: #DC143C;
+}
+/*For 'green' background color */
+#link_green{
+    position: relative;
+}
+
+#link_green:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #56DC95;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+ 
+#link_green:hover:after{
+    width: 100%;
+    left: 0;
+    background: #56DC95;
 }
 
 /**
@@ -194,13 +208,16 @@ hr {
     color: white;
 }
 
+/*
+ * Media Screen; responsive layer
+ */
 @media screen and (max-width: 640px) {
   #menu {
     font-size: 1.00em;
   }
   
   h1 {
-    font-size: 3.25em;
+    font-size: 3.75em;
   }
 }
 
@@ -211,5 +228,15 @@ hr {
   
   h1 {
     font-size: 2.50em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #menu {
+    font-size: 0.65em;
+  }
+  
+  h1 {
+    font-size: 2.20em;
   }
 }
