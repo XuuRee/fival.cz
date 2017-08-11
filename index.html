@@ -14,32 +14,98 @@
 		<meta property="og:title" content="Filip Valchar | Programmer & Designer"/>
 		<meta property="og:type" content="website"/>	
 		<meta property="og:description" content="Personal portfolio"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="images/fav_icon.png" type="image/x-icon">
         <link rel="stylesheet" href="w3.css">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">-->
-    </head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("a").on('click', function(event) {
+					if (this.hash !== "") {
+						event.preventDefault();
+						var hash = this.hash;
+						$('html, body').animate({scrollTop: $(hash).offset().top}, 800, function(){
+							window.location.hash = hash;
+						});
+					} 
+				});
+			});
+	</script>
+	</head>
     <body>
-        <div class="w3-topbar w3-border-darkred"/> 
-		<div id="menu" class="w3-bar w3-padding-16 w3-content">
-			<a href="index.html" class="w3-bar-item w3-button w3-margin w3-left w3-hover-none w3-leftbar w3-border-darkred">01</a> 
-			<a href="projects.html" id="link" class="w3-bar-item w3-button w3-margin w3-right w3-hover-none">works</a>
-			<a href="about.html" id="link" class="w3-bar-item w3-button w3-margin w3-right w3-hover-none">about</a>
+		<!-- intro -->
+		<div id="intro">
+			<div class="w3-topbar w3-border-darkred"/>
+			<div id="menu" class="w3-bar w3-padding-16 w3-content">
+				<!-- <a href="#intro" class="w3-bar-item w3-button w3-margin w3-left w3-hover-none w3-leftbar w3-border-darkred">FV</a> -->
+				<a href="#contact" id="link" class="w3-bar-item w3-button w3-margin w3-right w3-hover-none">contact</a>	
+				<a href="#work" id="link" class="w3-bar-item w3-button w3-margin w3-right w3-hover-none">work</a>
+				<a href="#about" id="link" class="w3-bar-item w3-button w3-margin w3-right w3-hover-none">about</a>
+			</div>
+			<div class="w3-container w3-content w3-padding-32">
+				<h1><b>* I am passionate<br>developer and designer<br>living in Brno,<br>Czech Republic. <span class="blink">|</span></b></h1>
+			</div>
 		</div>
-		<div class="w3-container w3-content w3-padding-32">
-            <h1><b>* I am passionate<br>developer and designer<br>living in Brno,<br>Czech Republic. <span class="blink">|</span></b></h1>
-        </div>
+		<!-- about -->
+		<div id="about">
+			<div class="w3-container w3-content w3-padding-32">
+				<div class="w3-padding-large w3-padding-64 w3-cell-row">
+					<div class="w3-container w3-cell w3-cell-middle w3-mobile"> <!--style="width: 40%;" -->
+						<img src="images/avatar.jpg" class="w3-circle w3-margin-right" alt="profile" style="width: 100%;">
+					</div>
+					<div class="w3-container w3-cell w3-mobile" style="width: 75%">
+						<h4>I specialise in programming and designing with focus on<!-- <br> -->
+							simplicity, usability and accessibility. I apply a variety
+							of skills through the practise of latest trends and methodology.
+							<!--<br>-->I like clean and and effective code. It' s my way of art.</h4>
+						<ul class="tags">
+							<li><a href="#" class="tag">resume</a></li>
+                 			<li><a href="https://github.com/xuuree" class="tag">github</a></li>
+							<li><a href="https://twitter.com/FValch" class="tag">twitter</a></li>
+							<li><a href="https://www.goodreads.com/xuuree" class="tag">goodreads</a></li>
+             			</ul>
+					</div>
+				</div>
+				<div class="w3-cell-row">
+					<div class="w3-container w3-cell">
+						<h3>First</h3>
+						<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin pharetra lorem in vehicula. Vivamus ac purus odio. Ut at odio id tellus pellentesque finibus. Aliquam pulvinar bibendum lacus quis varius. Nullam ac nunc lacus.</h5>
+					</div>
+					<div class="w3-container w3-cell">
+						<h3>Second</h3>
+						<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin pharetra lorem in vehicula. Vivamus ac purus odio. Ut at odio id tellus pellentesque finibus. Aliquam pulvinar bibendum lacus quis varius. Nullam ac nunc lacus.</h5>
+					</div>
+				</div>
+				<div class="w3-cell-row">
+					<div class="w3-container w3-cell">
+						<h3>Third</h3>
+						<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin pharetra lorem in vehicula. Vivamus ac purus odio. Ut at odio id tellus pellentesque finibus. Aliquam pulvinar bibendum lacus quis varius. Nullam ac nunc lacus.</h5>
+					</div>
+					<div class="w3-container w3-cell">
+						<h3>Fourth</h3>
+						<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin pharetra lorem in vehicula. Vivamus ac purus odio. Ut at odio id tellus pellentesque finibus. Aliquam pulvinar bibendum lacus quis varius. Nullam ac nunc lacus.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
 		<div class="w3-container w3-content w3-padding-32 w3-margin-bottom">
-            <div class="w3-left"><p>2017 &copy Filip Valchar</p></div>
-            <div class="w3-right">
-                <a href="https://twitter.com/FValch/" class="fa fa-twitter"></a>
-                <a href="https://www.facebook.com/filip.valchar/" class="fa fa-facebook"></a>
-                <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+			<div class="w3-left"><p>2017 &copy Filip Valchar</p></div>
+			<div class="w3-right">
+				<a href="https://twitter.com/FValch/" class="fa fa-twitter"></a>
+				<a href="https://www.facebook.com/filip.valchar/" class="fa fa-facebook"></a>
+				<a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
 				<a href="https://github.com/XuuRee/" class="fa fa-github"></a>
-            </div>
-        </div>
-        <script src="js/scripts.js"></script>
+			</div>		
+		</div>
+		<!--
+		<div id="works">
+			<div class="w3-container w3-content w3-padding-32">
+				<h1><b>* Now you can<br>see all my works.<br>Enjoy it! <span class="blink">|</span></b></h1>
+			</div>
+		</div>
+		-->
     </body>
 </html>
