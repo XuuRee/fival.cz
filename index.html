@@ -19,10 +19,6 @@
         <link rel="stylesheet" href="w3.css">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<style>
-		.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
-		.w3-third img:hover{opacity: 1}
-		</style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
@@ -125,18 +121,20 @@
 				<form action="contact.php" method="post" accept-charset='utf-8'>
     				<div class="w3-padding-32"> <!-- w3-row-padding -->
 						<div class="w3-half">
-							<input class="w3-input" name="first" type="text" placeholder="First name (required)">
+							<input class="w3-input cf" name="first" type="text" placeholder="First name (required)">
 						</div>
 						<div class="w3-half">
-							<input class="w3-input" name="last" type="text" placeholder="Last name (required)">
+							<input class="w3-input cf" name="last" type="text" placeholder="Last name (required)">
 						</div>
 					</div>
-					<div class="w3-padding-32"><input class="w3-input" name="subject" type="text" placeholder="Subject"></div>
-					<input class="w3-input" name="subject" type="text" placeholder="Your e-mail (required)">
 					<div class="w3-padding-32">
-						<textarea rows="6" class="w3-input" name="message" placeholder="Message (required)"></textarea>
+						<input class="w3-input cf" name="subject" type="text" placeholder="Subject">
 					</div>
-					<button class="w3-button w3-block w3-round w3-darkred">SEND MESSAGE</button>
+					<input class="w3-input cf" name="email" type="text" placeholder="Your e-mail (required)">
+					<div class="w3-padding-32">
+						<textarea rows="6" class="w3-input cf" name="message" placeholder="Message (required)"></textarea>
+					</div>
+					<button class="w3-button w3-block w3-round w3-darkred w3-hover-darkred">SEND MESSAGE</button>
 				</form>
 			</div>
 		</div>

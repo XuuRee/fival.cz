@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
+.w3-third img { margin-bottom: -6px; opacity: 0.8; cursor: pointer }
+.w3-third img:hover { opacity: 1 } 
+
 html, body {
     font-family: 'Fira Sans', sans-serif;
     line-height: 1.5;
@@ -58,6 +61,22 @@ hr {
     border: 0;
     border-top: 1px solid #eee;
     margin: 20px 0;
+}
+
+/**
+ * Form;
+ */
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.cf {
+    border-bottom: 1.5px solid #ccc;
+}
+
+.cf:hover {
+    border-color: #DC143C;
+    transition: border-color .6s ease;
 }
 
 /**
