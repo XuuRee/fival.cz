@@ -63,6 +63,13 @@ hr {
     margin: 20px 0;
 }
 
+.imagelabel {
+    position: absolute; 
+    top: 200px; 
+    left: 0; 
+    width: 100%; 
+}
+
 /**
  * Form;
  */
