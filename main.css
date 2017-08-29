@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
+/**
+ * W3 repaired
+ */
 .w3-third img { margin-bottom: -6px; opacity: 0.8; cursor: pointer }
 .w3-third img:hover { opacity: 1 }
 .w3-button:hover { opacity: 0.90 }
@@ -34,10 +37,7 @@ h4 {
 
 h5 {
     font-size: 18px;
-}
-
-h6 {
-    font-size: 1.20em;
+    font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,6 +47,12 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-size: 1em;
+}
+
+signature {
+    color: #DC143C;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .blink {
@@ -201,7 +207,7 @@ textarea:focus, input:focus {
 }
 
 /*
- * Icons; Facebook, Twitter, LinkedIn, GitHub
+ * Icons; Facebook, Twitter, LinkedIn, GitHub, Instagram
  */
 .fa {
     padding: 15px;
@@ -212,7 +218,7 @@ textarea:focus, input:focus {
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 .fa-facebook {
@@ -232,6 +238,11 @@ textarea:focus, input:focus {
 
 .fa-linkedin {
     background: #037FBD;
+    color: white;
+}
+
+.fa-instagram {
+    background: #D72D75;
     color: white;
 }
 
