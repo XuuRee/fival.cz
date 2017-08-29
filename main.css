@@ -7,6 +7,9 @@
 .w3-third img:hover { opacity: 1 }
 .w3-button:hover { opacity: 0.90 }
 
+/**
+ * Basic;
+ */
 html, body {
     font-family: 'Fira Sans', sans-serif;
     line-height: 1.5;
@@ -17,17 +20,18 @@ html {
 }
 
 h1 {
-    font-size: 3.60em;
+    font-size: 57.6px;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 6em;
-    border-bottom: 8px solid #000;
-    padding-bottom: 2px
+    font-size: 36px;
+    font-weight: normal;
 }
 
 h3 {
     font-size: 24px;
+    font-weight: bold;
 }
 
 h4 {
@@ -40,21 +44,27 @@ h5 {
     font-weight: normal;
 }
 
+p {
+    font-size: 16px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fira Sans', sans-serif;
     margin: 0.5em 0;
 }
 
-p {
-    font-size: 1em;
-}
-
+/**
+ * Signature (piktograms);
+ */
 signature {
     color: #DC143C;
     font-size: 22px;
     font-weight: bold;
 }
 
+/**
+ * Blink!;
+ */
 .blink {
     color: #DC143C;
     animation: blinker 1s linear infinite;
