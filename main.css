@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
 .w3-third img { margin-bottom: -6px; opacity: 0.8; cursor: pointer }
-.w3-third img:hover { opacity: 1 } 
+.w3-third img:hover { opacity: 1 }
+.w3-button:hover { opacity: 0.90 }
 
 html, body {
     font-family: 'Fira Sans', sans-serif;
