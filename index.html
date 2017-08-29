@@ -35,6 +35,8 @@
 	</script>
 	</head>
     <body>
+		<!-- back to top button -->
+		<a href="#intro" id="backButton" title="Back to top">^</a> <!-- <button onclick="topFunction()" id="backButton" title="Go to top">Top</button> -->
 		<!-- intro -->
 		<div id="intro">
 			<div class="w3-topbar w3-border-darkred"/>
@@ -203,5 +205,22 @@
 				<a href="https://github.com/XuuRee/" class="fa fa-github"></a>
 			</div>		
 		</div>
+		<script>
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() { scrollFunction() };
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("backButton").style.display = "block";
+				} else {
+					document.getElementById("backButton").style.display = "none";
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
     </body>
 </html>
