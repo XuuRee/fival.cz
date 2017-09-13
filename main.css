@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 45px;
     font-weight: normal;
 }
 
@@ -270,21 +270,31 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 480px) {
-  #menu {
-    font-size: 0.85em;
-  }
-  
-  h1 {
-    font-size: 2.50em;
-  }
+    #menu { font-size: 15px; }
+    h1 { font-size: 38px; }
+    h2 { font-size: 34px; }
+    h4 { font-size: 24px; }
+    .w3-margin { margin:0px!important }
+    .w3-display-left {
+        position: absolute;
+        left: 0;
+        top: 20%;
+        transform: translate(0%,-20%)
+    }
 }
 
 @media screen and (max-width: 320px) {
-  #menu {
-    font-size: 0.65em;
-  }
-  
-  h1 {
-    font-size: 2.20em;
-  }
+    #menu {
+        font-size: 14px;
+    }
+    h1 { font-size: 32px; }
+    h2 { font-size: 28px; }
+    h4 { font-size: 18px; }
+    .w3-margin { margin:0px!important }
+    .w3-display-left {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        transform: translate(0%,-10%)
+    }
 }
