@@ -259,22 +259,51 @@ textarea:focus, input:focus {
 /*
  * Media Screen; responsive layer
  */
+
+@media screen and (max-width: 1024px) {
+    #menu { font-size: 16px; }
+    h1 { font-size: 52px; }
+    h2 { font-size: 30px; }
+    h4 { font-size: 18px; }
+    .w3-display-left {
+        position: absolute;
+        left: 0;
+        top: 15%;
+        transform: translate(0%,-15%)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #menu { font-size: 16px; }
+    h1 { font-size: 50px; }
+    h2 { font-size: 28px; }
+    h4 { font-size: 16px; }
+    .w3-display-left {
+        position: absolute;
+        left: 0;
+        top: 20%;
+        transform: translate(0%,-20%)
+    }
+}
+
 @media screen and (max-width: 640px) {
-  #menu {
-    font-size: 1.00em;
-  }
-  
-  h1 {
-    font-size: 3.75em;
-  }
+    #menu { font-size: 16px; }
+    h1 { font-size: 46px; }
+    h2 { font-size: 32px; }
+    h4 { font-size: 22px; }
+    .w3-display-left {
+        position: absolute;
+        left: 0;
+        top: 30%;
+        transform: translate(0%,-30%)
+    }
 }
 
 @media screen and (max-width: 480px) {
     #menu { font-size: 15px; }
-    h1 { font-size: 38px; }
-    h2 { font-size: 34px; }
-    h4 { font-size: 24px; }
-    .w3-margin { margin:0px!important }
+    h1 { font-size: 42px; }
+    h2 { font-size: 30px; }
+    h4 { font-size: 20px; }
     .w3-display-left {
         position: absolute;
         left: 0;
@@ -284,13 +313,10 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 320px) {
-    #menu {
-        font-size: 14px;
-    }
+    #menu { font-size: 14px; }
     h1 { font-size: 32px; }
     h2 { font-size: 28px; }
     h4 { font-size: 18px; }
-    .w3-margin { margin:0px!important }
     .w3-display-left {
         position: absolute;
         left: 0;

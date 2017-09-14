@@ -32,7 +32,7 @@
 					} 
 				});
 			});
-	</script>
+		</script>
 	</head>
     <body>
 		<!-- back to top button -->
@@ -42,9 +42,15 @@
 			<div class="w3-topbar w3-border-darkred"/>
 			<div id="menu" class="w3-bar w3-padding-16 w3-content">
 				<!-- <a href="#intro" class="w3-bar-item w3-button w3-margin w3-left w3-hover-none w3-leftbar w3-border-darkred">FV</a> -->
-				<a href="#contact" id="link" class="w3-bar-item w3-mobile w3-button w3-margin w3-right w3-hover-none">contact</a>	
-				<a href="#work" id="link" class="w3-bar-item w3-mobile w3-button w3-margin w3-right w3-hover-none">work</a>
-				<a href="#about" id="link" class="w3-bar-item w3-mobile w3-button w3-margin w3-right w3-hover-none">about</a>	
+				<a href="#contact" id="link" class="w3-bar-item w3-button w3-margin w3-right w3-hover-none w3-hide-small">contact</a>	
+				<a href="#work" id="link" class="w3-bar-item w3-button w3-margin w3-right w3-hover-none w3-hide-small">work</a>
+				<a href="#about" id="link" class="w3-bar-item w3-button w3-margin w3-right w3-hover-none w3-hide-small">about</a>
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hover-none w3-hide-large w3-hide-medium w3-xlarge" onclick="navFunction()">&#9776;</a>
+			</div>
+			<div id="smallnav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+				<a href="#about" class="w3-bar-item w3-button w3-hover-none">about</a>
+				<a href="#work" class="w3-bar-item w3-button w3-hover-none">work</a>
+				<a href="#contact" class="w3-bar-item w3-button w3-hover-none">contact</a>
 			</div>
 			<div class="w3-container w3-content w3-padding-32">
 				<h1><b>* I am passionate<br>developer and designer<br>living in Brno,<br>Czech Republic. <span class="blink">|</span></b></h1>
@@ -55,7 +61,7 @@
 			<div class="w3-container w3-content w3-padding-32">
 				<div class="w3-padding-64 w3-cell-row">
 					<div class="w3-container w3-cell w3-cell-middle w3-mobile"> 
-						<img src="images/avatar4.jpg" class="w3-circle w3-margin-right" alt="profile" style="width: 100%;"> <!-- w3-grayscale -->
+						<img src="images/avatar3.jpg" class="w3-circle w3-margin-right" alt="profile" style="width: 100%;"> <!-- w3-grayscale -->
 					</div>
 					<div class="w3-container w3-cell w3-mobile" style="width: 75%">
 						<h4>I specialise in programming and designing with focus on
@@ -216,11 +222,21 @@
 					document.getElementById("backButton").style.display = "none";
 				}
 			}
-
 			// When the user clicks on the button, scroll to the top of the document
 			function topFunction() {
 				document.body.scrollTop = 0;
 				document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<script>
+			// When screen is small, resize navigation
+			function navFunction() {
+				var x = document.getElementById("smallnav");
+				if (x.className.indexOf("w3-show") == -1) {
+				    x.className += " w3-show";
+				} else { 
+				    x.className = x.className.replace(" w3-show", "");
+				}
 			}
 		</script>
     </body>
