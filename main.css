@@ -224,9 +224,10 @@ textarea:focus, input:focus {
 .fa {
     padding: 15px;
     font-size: 25px;
-    width: 45px; /**/
+    width: 45px;
     text-align: center;
     text-decoration: none;
+    border-radius: 50%;
 }
 
 .fa:hover {
