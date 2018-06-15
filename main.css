@@ -259,6 +259,11 @@ textarea:focus, input:focus {
     color: white;
 }
 
+.fa-medium {
+    background: #1A1A1A;
+    color: white;
+}
+
 /*
  * Media Screen; responsive layer
  */
