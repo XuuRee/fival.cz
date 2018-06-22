@@ -238,7 +238,8 @@ textarea:focus, input:focus {
 }
 
 .fa:hover {
-    opacity: 0.85;
+    opacity: 0.75;  /* black icon, hover background */
+    transition: opacity .4s ease;
 }
 
 .fa-facebook {
