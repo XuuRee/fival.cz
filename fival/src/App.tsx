@@ -1,28 +1,36 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { State } from './States/State';
+import { connect } from 'react-redux';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+type AppProps = State;
+
+const App: React.SFC<AppProps> = ({ page }) => { 
+  let content = null
+  switch(page.kind) {
+    case "home":
+      content = <h1>Homepage</h1>
+      break;
+    case "aboutMe":
+      content = <h1>About me</h1>
+      break;
+    case "work":
+      content = <h1>Work</h1>
+      break;
+    default:
+      content = <h1>Error</h1>
   }
-}
 
-export default App;
+  return (
+    <React.Fragment>
+      {content}
+    </React.Fragment>
+  ); 
+};
+
+const mapStateToProps = (state: State): AppProps => state;
+
+export default connect(
+  mapStateToProps,
+  undefined
+)(App);
