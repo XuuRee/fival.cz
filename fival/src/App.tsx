@@ -2,6 +2,11 @@ import React from 'react';
 import './App.css';
 import { State } from './States/State';
 import { connect } from 'react-redux';
+import Menu from './Components/Menu';
+import Homepage from './Components/Homepage';
+import AboutMe from './Components/AboutMe';
+import Work from './Components/Work';
+import Error from './Components/Error';
 
 type AppProps = State;
 
@@ -9,21 +14,26 @@ const App: React.SFC<AppProps> = ({ page }) => {
   let content = null
   switch(page.kind) {
     case "home":
-      content = <h1>Homepage</h1>
+      content = <Homepage />
       break;
     case "aboutMe":
-      content = <h1>About me</h1>
+      content = <AboutMe />
       break;
     case "work":
-      content = <h1>Work</h1>
+      content = <Work />
       break;
     default:
-      content = <h1>Error</h1>
+      content = <Error />
   }
 
   return (
     <React.Fragment>
-      {content}
+        <div className="container">
+          <Menu selected={page.kind} />
+        </div>
+        <div className="container">
+          {content}
+        </div>
     </React.Fragment>
   ); 
 };
