@@ -16,13 +16,13 @@ const Menu: React.SFC<MenuProps & DispatchMenuProps> = ({ selected, onHomePageCh
 	return (
 		<ul className="nav justify-content-end">
   			<li className="nav-item">
-    			<a className="nav-link menu-item" href="#" onClick={onHomePageChange}>Home</a>
+    			<a className="nav-link menu-item" href="#" onClick={onHomePageChange}>H</a>
   			</li>
   			<li className="nav-item">
-    			<a className="nav-link menu-item" href="#" onClick={onAboutMePageChange}>About me</a>
+    			<a className="nav-link menu-item" href="#" onClick={onAboutMePageChange}>AM</a>
   			</li>
   			<li className="nav-item">
-    			<a className="nav-link menu-item" href="#" onClick={onWorkPageChange}>Work</a>
+    			<a className="nav-link menu-item" href="#" onClick={onWorkPageChange}>W</a>
   			</li>
 		</ul>
 	); 

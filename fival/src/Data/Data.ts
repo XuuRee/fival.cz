@@ -1,7 +1,7 @@
-import { State, Home } from "../States/State";
+import { State, Initial } from "../States/State";
 
-export const home: Home = { kind: "home" }
+export const initial: Initial = { kind: "initial" }
 
 export const initialState: State = {
-    page: home
+    page: initial
 };

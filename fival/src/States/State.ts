@@ -1,3 +1,7 @@
+export type Initial = { 
+    readonly kind: "initial"
+}
+
 export type Home = { 
     readonly kind: "home"
 }
@@ -11,5 +15,5 @@ export type Work = {
 }
 
 export type State = {
-    readonly page: Home | AboutMe | Work; 
+    readonly page: Initial | Home | AboutMe | Work; 
 };

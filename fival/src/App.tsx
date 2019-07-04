@@ -2,39 +2,21 @@ import React from 'react';
 import './App.css';
 import { State } from './States/State';
 import { connect } from 'react-redux';
-import Menu from './Components/Menu';
-import Homepage from './Components/Homepage';
-import AboutMe from './Components/AboutMe';
-import Work from './Components/Work';
-import Error from './Components/Error';
+import Initial from './Components/Initial';
+import Content from './Components/Content';
 
 type AppProps = State;
 
-const App: React.SFC<AppProps> = ({ page }) => { 
-  let content = null
-  switch(page.kind) {
-    case "home":
-      content = <Homepage />
-      break;
-    case "aboutMe":
-      content = <AboutMe />
-      break;
-    case "work":
-      content = <Work />
-      break;
-    default:
-      content = <Error />
-  }
+/*
+<div className="point1 point1-position" />
+<div className="point2 point2-position" /> 
+*/
 
+const App: React.SFC<AppProps> = ({ page }) => { 
   return (
-    <React.Fragment>
-        <div className="container">
-          <Menu selected={page.kind} />
-        </div>
-        <div className="container">
-          {content}
-        </div>
-    </React.Fragment>
+      <div className="app">
+        {page.kind === "initial" ? <Initial /> : <Content {...page} />}
+      </div>
   ); 
 };
 

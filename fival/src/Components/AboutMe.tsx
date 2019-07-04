@@ -2,7 +2,9 @@ import React from 'react';
 
 const AboutMe: React.SFC = () => { 
 	return (
-		<h2>About me</h2>
+		<div className="transition">
+			<h2>AM</h2>
+		</div>
 	); 
 };
 

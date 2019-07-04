@@ -1,8 +1,15 @@
 import React from 'react';
+import "../Static/Homepage.css";
 
 const Homepage: React.SFC = () => { 
 	return (
-		<h2>Homepage</h2>
+		<div className="transition">
+			<div className="homepage-text homepage-text-position">
+				Lorem ipsum dolor sit amet,<br /> 
+				consectetuer adipiscing elit<br />
+				malesuada fames ac turpis egestas.
+			</div>
+		</div>
 	); 
 };
 

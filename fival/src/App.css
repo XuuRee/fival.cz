@@ -1,3 +1,43 @@
+.app {
+	height: 100vh;
+	color: white;
+	background-color: #1A1A1A;
+}
+
+.transition {
+	animation: showTime 1s;
+}
+
+.point1,.point2 {
+	height: 0.75em;
+  	width: 0.75em;
+  	background-color: #4D4D4D;
+	border-radius: 50%;
+	transition: linear 0.25s;
+}
+
+.point1:hover {
+	height: 1.50em;
+	width: 1.50em;
+	background-color: yellow;
+}
+
+.point2:hover {
+	background-color: purple;
+}
+
+.point1-position {
+	position: absolute;
+	left: 83%;
+	top: 56%;
+}
+
+.point2-position {
+	position: absolute;
+	left: 9%;
+	top: 32%;
+}
+
 .menu-item {
 	color: white;
 	font-size: 1.25em;
@@ -5,4 +45,9 @@
 
 .text-underline {
 	text-decoration: underline;
+}
+
+@keyframes showTime {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
 }
