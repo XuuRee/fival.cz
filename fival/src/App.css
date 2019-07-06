@@ -4,6 +4,35 @@
 	background-color: #1A1A1A;
 }
 
+.font {
+	font-family: 'DM Serif Display';
+	letter-spacing: 0.035em;
+}
+
+.size-1 {
+	font-size: 4em;
+}
+
+.size-2 {
+	font-size: 3em;
+}
+
+.size-3 {
+	font-size: 2em;
+}
+
+.size-4 {
+	font-size: 1.50em;
+}
+
+.size-5 {
+	font-size: 1.25em;
+}
+
+.size-6 {
+	font-size: 1em;
+}
+
 .transition {
 	animation: showTime 1s;
 }
@@ -40,7 +69,19 @@
 
 .menu-item {
 	color: white;
-	font-size: 1.25em;
+	font-size: 1.35em;
+	margin-top: 0.50em;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	padding-top: 0.15em;
+	padding-bottom: 0.15em;
+	transition: linear 0.25s;
+}
+
+.menu-item:hover,.menu-item-selected {
+	color: white;
+	background-color: #DC2826;
+	
 }
 
 .text-underline {

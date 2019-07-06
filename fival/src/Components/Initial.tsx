@@ -2,20 +2,38 @@ import React, { Dispatch } from 'react';
 import { connect, MapDispatchToProps } from 'react-redux';
 import { setPageToHome, StateActions } from '../Actions/StateActions';
 import "../Static/Initial.css";
-import loading from "../Images/loading.svg";
 
 type DispatchHomepage = {
 	onHomePageChange: () => void;
 };
 
 class Initial extends React.Component<DispatchHomepage> {
+	state = {
+		word: ''
+	}
 
 	componentDidMount() {
-	  setTimeout(() => this.props.onHomePageChange(), 2500)
+		const sentence = ['I am ', 'software ', 'engineer. ', 'Welcome!', ' '];
+
+		let timer = 250;
+		sentence.map(phrase => {
+			setTimeout(() => {
+				this.setState({ word: phrase })
+			}, timer);
+			timer += 750;
+		});
+
+	  	setTimeout(() => this.props.onHomePageChange(), timer)
 	}
 
 	render() {
-		return <img className="loading" src={loading} />;
+		return (
+			<div className="transition">
+				<div className="center font size-1">
+					{this.state.word}
+				</div>
+			</div>
+		);
 	}
 }
 
