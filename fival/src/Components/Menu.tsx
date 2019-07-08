@@ -1,6 +1,7 @@
 import React, { Dispatch } from 'react';
 import { connect, MapDispatchToProps } from 'react-redux';
 import { setPageToHome, setPageToAboutMe, setPageToWork, StateActions } from '../Actions/StateActions';
+import Submenu from "./Submenu";
 
 type MenuProps = {
 	selected: string
@@ -14,37 +15,20 @@ type DispatchMenuProps = {
 
 const Menu: React.SFC<MenuProps & DispatchMenuProps> = ({ selected, onHomePageChange, onAboutMePageChange, onWorkPageChange }) => { 
 	return (
-		<React.Fragment>
-		<div>
-		<ul className="nav justify-content-end">
-  			<li className="nav-item">
-    			<a className="nav-link menu-item menu-item-selected font" href="#" onClick={onHomePageChange}>Home</a>
-  			</li>
-  			<li className="nav-item">
-    			<a className="nav-link menu-item font" href="#" onClick={onWorkPageChange}>Work</a>
-  			</li>
-			<li className="nav-item">
-    			<a className="nav-link menu-item font" href="#" onClick={onAboutMePageChange}>About Me</a>
-  			</li>
-		</ul>
-		</div>
-		<div>
+		<div className="font size-5">
 			<ul className="nav justify-content-end">
-			<li className="nav-item">
-    			<a className="nav-link menu-item font" href="#" onClick={onWorkPageChange}>Project 1</a>
-  			</li>
-			<li className="nav-item">
-    			<a className="nav-link menu-item font" href="#" onClick={onAboutMePageChange}>Project 2</a>
-  			</li>
-			<li className="nav-item">
-    			<a className="nav-link menu-item font" href="#" onClick={onAboutMePageChange}>Project 3</a>
-  			</li>
-			<li className="nav-item">
-    			<a className="nav-link menu-item font" href="#" onClick={onAboutMePageChange}>Project 4</a>
-  			</li>
+  				<li className="nav-item">
+    				<a className={selected === "home" ? "nav-link nav-element nav-selected" : "nav-link nav-element"} href="#" onClick={onHomePageChange}>Home</a>
+				</li>
+  				<li className="nav-item">
+    				<a className={selected === "work" ? "nav-link nav-element nav-selected" : "nav-link nav-element"} href="#" onClick={onWorkPageChange}>Work</a>
+  				</li>
+				<li className="nav-item">
+					<a className={selected === "aboutMe" ? "nav-link nav-element nav-selected" : "nav-link nav-element"} href="#" onClick={onAboutMePageChange}>About Me</a>
+  				</li>
 			</ul>
+			{selected === "work" && <Submenu />}
 		</div>
-		</React.Fragment>
 	); 
 };
 
