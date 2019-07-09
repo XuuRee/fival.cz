@@ -4,6 +4,7 @@ import { State } from './States/State';
 import { connect } from 'react-redux';
 import Initial from './Components/Initial';
 import Content from './Components/Content';
+import Game from './Components/Game';
 
 type AppProps = State;
 
@@ -12,10 +13,22 @@ type AppProps = State;
 <div className="point2 point2-position" /> 
 */
 
-const App: React.SFC<AppProps> = ({ page }) => { 
+const App: React.SFC<AppProps> = ({ page }) => {
+  let content = null;
+  switch (page.kind) {
+    case "initial":
+      content = <Initial />
+      break;
+    case "game":
+      content = <Game />
+      break;
+    default:
+      content = <Content {...page} />
+  }
+  
   return (
       <div className="app">
-        {page.kind === "initial" ? <Initial /> : <Content {...page} />}
+        {content}
       </div>
   ); 
 };

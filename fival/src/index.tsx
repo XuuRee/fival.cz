@@ -7,6 +7,8 @@ import * as serviceWorker from './serviceWorker';
 import rootReducer from "./Reducer";
 import { compose, createStore } from 'redux';
 import { Provider } from 'react-redux';
+import { gameAvailable } from './Utils/Other';
+import { setPageToGame } from './Actions/StateActions';
 
 const composeEnhancers =
   typeof window === "object" && (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
@@ -14,6 +16,12 @@ const composeEnhancers =
     : compose;
 
 export const store = createStore(rootReducer, composeEnhancers());
+
+const game = gameAvailable();
+
+if (game) {
+  store.dispatch(setPageToGame());
+}
 
 ReactDOM.render(
     <Provider store={store}>

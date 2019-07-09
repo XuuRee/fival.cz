@@ -8,11 +8,20 @@ type Chapter = {
     readonly parts: Part[];
 }
 
-type Decisions = {
-    readonly workAtTheBar: boolean;
+type Important = {
+    readonly workAtTheBar: boolean | null;
 }
 
-type Game = {
+type Trivial = {
+    readonly isCharacterFine: boolean | null;
+}
+
+export type Decisions = {
+    readonly important: Important;
+    readonly trivial: Trivial;
+}
+
+export type Game = {
     readonly kind: "game";
     readonly tutorial: boolean;
     readonly chapters: Chapter[];
