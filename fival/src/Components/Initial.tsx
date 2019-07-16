@@ -1,6 +1,6 @@
 import React, { Dispatch } from 'react';
 import { connect, MapDispatchToProps } from 'react-redux';
-import { setPageToHome, StateActions } from '../Actions/StateActions';
+import { setPageToHome, PortfolioActions } from '../Actions/PortfolioActions';
 import "../Static/Initial.css";
 
 type DispatchHomepage = {
@@ -23,7 +23,7 @@ class Initial extends React.Component<DispatchHomepage> {
 			timer += 750;
 		});
 
-	  	setTimeout(() => this.props.onHomePageChange(), timer)
+	  setTimeout(() => this.props.onHomePageChange(), timer)
 	}
 
 	render() {
@@ -37,7 +37,7 @@ class Initial extends React.Component<DispatchHomepage> {
 	}
 }
 
-const mapDispatchToProps: MapDispatchToProps<DispatchHomepage, {}> = (dispatch: Dispatch<StateActions>) => ({
+const mapDispatchToProps: MapDispatchToProps<DispatchHomepage, {}> = (dispatch: Dispatch<PortfolioActions>) => ({
 	onHomePageChange: () => dispatch(setPageToHome()),
 });
 

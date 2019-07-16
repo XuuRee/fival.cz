@@ -1,25 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as serviceWorker from './serviceWorker';
+import { compose, createStore, Store } from 'redux';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import App from './App';
-import * as serviceWorker from './serviceWorker';
-import rootReducer from "./Reducer";
-import { compose, createStore } from 'redux';
 import { Provider } from 'react-redux';
+import { initialState } from './Data/Data';
+import { gameParameter } from "./Utils/Other";
+import rootReducer from './Reducer';
+import { setGame } from "./Actions/TypeActions";
 
 const composeEnhancers =
   typeof window === "object" && (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
     ? (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
     : compose;
 
-export const store = createStore(rootReducer, composeEnhancers());
+const store = createStore(rootReducer, initialState, composeEnhancers());
+
+const startGame = gameParameter();
+if (startGame) {
+  store.dispatch(setGame());
+}
 
 ReactDOM.render(
-    <Provider store={store}>
-      <App />
-    </Provider>,
-    document.getElementById("root") as HTMLElement
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root") as HTMLElement
 );
 
 // If you want your app to work offline and load faster, you can change

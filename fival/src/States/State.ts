@@ -16,6 +16,13 @@ export type AboutMe = {
     readonly kind: "aboutMe"
 }
 
+export type Portfolio = {
+    readonly kind: "portfolio";
+    readonly page: Initial | Home | Work | AboutMe; 
+}
+
 export type State = {
-    readonly page: Initial | Home | Work | Game | AboutMe; 
+    readonly type: "portfolio" | "game";
+    readonly portfolio: Portfolio;
+    readonly game: Game;
 };

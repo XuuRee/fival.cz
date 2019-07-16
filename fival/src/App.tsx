@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import { State } from './States/State';
 import { connect } from 'react-redux';
-import Initial from './Components/Initial';
-import Content from './Components/Content';
+import Portfolio from './Components/Portfolio';
+import Game from './Components/Game';
 
 type AppProps = State;
 
@@ -12,10 +12,10 @@ type AppProps = State;
 <div className="point2 point2-position" /> 
 */
 
-const App: React.SFC<AppProps> = ({ page }) => { 
+const App: React.SFC<AppProps> = ({ type, portfolio }) => {
   return (
       <div className="app">
-        {page.kind === "initial" ? <Initial /> : <Content {...page} />}
+        {type === "portfolio" ? <Portfolio {...portfolio} /> : <Game />}
       </div>
   ); 
 };

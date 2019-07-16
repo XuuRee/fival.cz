@@ -1,6 +1,6 @@
 import React, { Dispatch } from 'react';
 import { connect, MapDispatchToProps } from 'react-redux';
-import { setPageToHome, setPageToAboutMe, setPageToWork, StateActions } from '../Actions/StateActions';
+import { setPageToHome, setPageToAboutMe, setPageToWork, PortfolioActions } from '../Actions/PortfolioActions';
 import Submenu from "./Submenu";
 
 type MenuProps = {
@@ -32,7 +32,7 @@ const Menu: React.SFC<MenuProps & DispatchMenuProps> = ({ selected, onHomePageCh
 	); 
 };
 
-const mapDispatchToProps: MapDispatchToProps<DispatchMenuProps, {}> = (dispatch: Dispatch<StateActions>) => ({
+const mapDispatchToProps: MapDispatchToProps<DispatchMenuProps, {}> = (dispatch: Dispatch<PortfolioActions>) => ({
 	onHomePageChange: () => dispatch(setPageToHome()),
 	onAboutMePageChange: () => dispatch(setPageToAboutMe()),
 	onWorkPageChange: () => dispatch(setPageToWork())

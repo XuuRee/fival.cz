@@ -8,6 +8,8 @@ type Chapter = {
     readonly parts: Part[];
 }
 
+// + important, trivial decisions
+
 type Decisions = {
     readonly workAtTheBar: boolean;
 }
