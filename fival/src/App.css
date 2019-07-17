@@ -1,7 +1,12 @@
 .app {
 	height: 100vh;
 	color: white;
-	background-color: #1A1A1A;
+	background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.80),
+			rgba(0, 0, 0, 0.70)
+		),
+		url(./Images/night_background.png) repeat;
 }
 
 .font {
@@ -47,6 +52,15 @@
 
 .transition {
 	animation: showTime 1s;
+}
+
+.marker {
+	background-color: #DC2826;
+	transition: ease-out 0.5s;
+}
+
+.marker:hover {
+	background-color: #DF3C3A;
 }
 
 .point1,.point2 {
