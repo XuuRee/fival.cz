@@ -1,5 +1,1 @@
-export const gameAvailable = (): boolean => {
-    const query = window.location.pathname;
-    return query === "/game" ? true : false;
-  };
-  
+export const gameParameter = (): boolean => (window.location.pathname === '/game' ? true : false)

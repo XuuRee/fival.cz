@@ -1,9 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-const Error: React.SFC = () => { 
-	return (
-		<h2>Error</h2>
-	); 
-};
+const Error: React.SFC = () => {
+    return <h2>Error</h2>
+}
 
-export default Error;
+export default Error

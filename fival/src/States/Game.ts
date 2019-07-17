@@ -1,11 +1,11 @@
 type Part = {
-    readonly text: string;
+    readonly text: string
 }
 
 type Chapter = {
-    readonly number: number;
-    readonly name: string;
-    readonly parts: Part[];
+    readonly number: number
+    readonly name: string
+    readonly parts: Part[]
 }
 
 type Important = {
@@ -28,4 +28,4 @@ export type Game = {
     readonly decisions: Decisions;
 }
 
-export default Game;
+export default Game

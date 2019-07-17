@@ -1,0 +1,50 @@
+.fa {
+	padding: 0.50em;
+	font-size: 1.50em;
+	width: 2.0em;
+	margin-right: 0.50em;
+  text-align: center;
+  text-decoration: none;
+	background: #333333;
+	transition: ease 0.5s;
+}
+
+.fa-twitter {
+	color: white;
+}
+
+.fa-twitter:hover {
+	color: white;
+	background: rgba(29, 161, 243, 0.75);
+	text-decoration: none;
+}
+
+.fa-linkedin {
+	color: white;
+}
+
+.fa-linkedin:hover {
+	color: white;
+	background: rgba(14, 115, 163, 0.75);
+	text-decoration: none;
+}
+
+.fa-github {
+	color: white;
+}
+
+.fa-github:hover {
+	color: white;
+	background: rgba(149, 38, 205, 0.75);
+	text-decoration: none;
+}
+
+.fa-medium {
+	color: white;
+}
+
+.fa-medium:hover {
+	color: black;
+	background: rgba(235, 235, 235, 0.75);
+	text-decoration: none;
+}
