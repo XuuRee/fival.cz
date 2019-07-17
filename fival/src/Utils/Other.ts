@@ -1,2 +1,1 @@
-export const gameParameter = (): boolean =>
-	window.location.pathname === "/game" ? true : false;
+export const gameParameter = (): boolean => (window.location.pathname === '/game' ? true : false)

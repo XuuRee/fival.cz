@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
-import { State } from './States/State';
-import { connect } from 'react-redux';
-import Portfolio from './Components/Portfolio';
-import Game from './Components/Game';
+import React from 'react'
+import './App.css'
+import { State } from './States/State'
+import { connect } from 'react-redux'
+import Portfolio from './Components/Portfolio'
+import Game from './Components/Game'
 
-type AppProps = State;
+type AppProps = State
 
 /*
 <div className="point1 point1-position" />
@@ -13,16 +13,12 @@ type AppProps = State;
 */
 
 const App: React.SFC<AppProps> = ({ type, portfolio }) => {
-  return (
-      <div className="app">
-        {type === "portfolio" ? <Portfolio {...portfolio} /> : <Game />}
-      </div>
-  ); 
-};
+    return <div className="app">{type === 'portfolio' ? <Portfolio {...portfolio} /> : <Game />}</div>
+}
 
-const mapStateToProps = (state: State): AppProps => state;
+const mapStateToProps = (state: State): AppProps => state
 
 export default connect(
-  mapStateToProps,
-  undefined
-)(App);
+    mapStateToProps,
+    undefined
+)(App)

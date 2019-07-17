@@ -1,33 +1,33 @@
 export type SetPageToInitial = {
-	readonly type: "CHANGE_PAGE_TO_INITIAL";
+    readonly type: 'CHANGE_PAGE_TO_INITIAL'
 }
 
 export type SetPageToHome = {
-	readonly type: "CHANGE_PAGE_TO_HOME";
-};
+    readonly type: 'CHANGE_PAGE_TO_HOME'
+}
 
 export type SetPageToAboutMe = {
-	readonly type: "CHANGE_PAGE_TO_ABOUT_ME";
-};
+    readonly type: 'CHANGE_PAGE_TO_ABOUT_ME'
+}
 
 export type SetPageToWork = {
-	readonly type: "CHANGE_PAGE_TO_WORK";
-};
+    readonly type: 'CHANGE_PAGE_TO_WORK'
+}
 
 export const setPageToInitial = (): SetPageToInitial => ({
-	type: "CHANGE_PAGE_TO_INITIAL",
-});
+    type: 'CHANGE_PAGE_TO_INITIAL',
+})
 
 export const setPageToHome = (): SetPageToHome => ({
-	type: "CHANGE_PAGE_TO_HOME",
-});
+    type: 'CHANGE_PAGE_TO_HOME',
+})
 
 export const setPageToWork = (): SetPageToWork => ({
-	type: "CHANGE_PAGE_TO_WORK",
-});
+    type: 'CHANGE_PAGE_TO_WORK',
+})
 
 export const setPageToAboutMe = (): SetPageToAboutMe => ({
-	type: "CHANGE_PAGE_TO_ABOUT_ME",
-});
+    type: 'CHANGE_PAGE_TO_ABOUT_ME',
+})
 
-export type PortfolioActions = SetPageToInitial | SetPageToHome | SetPageToWork | SetPageToAboutMe;
+export type PortfolioActions = SetPageToInitial | SetPageToHome | SetPageToWork | SetPageToAboutMe
