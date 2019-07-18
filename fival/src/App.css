@@ -1,12 +1,5 @@
 .app {
-	height: 100vh;
 	color: white;
-	background: 
-		linear-gradient(
-			rgba(0, 0, 0, 0.80),
-			rgba(0, 0, 0, 0.70)
-		),
-		url(./Images/night_background.png) repeat;
 }
 
 .font {
@@ -65,8 +58,8 @@
 
 .point1,.point2 {
 	height: 0.75em;
-  	width: 0.75em;
-  	background-color: #4D4D4D;
+  width: 0.75em;
+  background-color: #4D4D4D;
 	border-radius: 50%;
 	transition: linear 0.25s;
 }

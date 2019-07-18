@@ -14,11 +14,11 @@ export const initialGame: Game = {
     chapters: [],
     decisions: {
         important: {
-            workAtTheBar: null
+            workAtTheBar: null,
         },
         trivial: {
-            isCharacterFine: null
-        }
+            isCharacterFine: null,
+        },
     },
 }
 

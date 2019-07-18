@@ -6,6 +6,7 @@ import AboutMe from './AboutMe'
 import Work from './Work'
 import Error from './Error'
 import * as State from '../States/State'
+import '../Static/Portfolio.css'
 
 type PortfolioProps = State.Portfolio
 
@@ -31,10 +32,10 @@ const Portfolio: React.SFC<PortfolioProps> = ({ page }) => {
     const menu = page.kind !== 'initial' && <Menu selected={page.kind} />
 
     return (
-        <React.Fragment>
+        <div className="portfolio">
             <div className="container">{menu}</div>
             <div className="container">{content}</div>
-        </React.Fragment>
+        </div>
     )
 }
 

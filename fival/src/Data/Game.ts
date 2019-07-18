@@ -1,15 +1,15 @@
-import { Game } from "../States/Game";
+import { Game } from '../States/Game'
 
 export const gameInitialState: Game = {
-    kind: "game",
+    kind: 'game',
     tutorial: true,
     chapters: [],
     decisions: {
         important: {
-            workAtTheBar: null
+            workAtTheBar: null,
         },
         trivial: {
-            isCharacterFine: null
-        }
-    }
+            isCharacterFine: null,
+        },
+    },
 }

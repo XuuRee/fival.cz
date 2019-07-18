@@ -40,6 +40,10 @@ export const portfolio: Reducer<Portfolio, PortfolioActions> = (
 
 export const game: Reducer<Game, GameActions> = (state: Game = initialState.game, action: GameActions): Game => {
     switch (action.type) {
+        case 'TURN_OFF_TUTORIAL':
+            return { ...state, tutorial: false }
+        case 'TURN_ON_TUTORIAL':
+            return { ...state, tutorial: true }
         case 'CHANGE_TO_NEXT_CHAPTER':
             return state
         default:

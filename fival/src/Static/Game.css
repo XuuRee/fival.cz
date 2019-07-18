@@ -1,0 +1,23 @@
+.game {
+	height: 100vh;
+	background-color: #0D1322;
+}
+
+.illustration {
+	height: 100vh;
+	background-color: #FFEEE6;
+}
+
+.tutorial {
+	border-radius: 0.25em;
+	padding: 2.50em;
+	background-color: #3D3D5E;
+}
+
+.chapter {
+	padding: 2em 4em 0 4em;
+}
+
+.nav-game {
+	padding: 1.50em;
+}

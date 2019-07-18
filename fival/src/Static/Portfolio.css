@@ -1,0 +1,12 @@
+.portfolio {
+	height: 100vh;
+	background-color: black;
+	/*
+	background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.80),
+			rgba(0, 0, 0, 0.70)
+		),
+		url(./Images/night_background.png) repeat;
+	*/
+}

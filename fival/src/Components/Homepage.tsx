@@ -13,6 +13,9 @@ const Homepage: React.SFC = () => {
                 living in Brno, Czech Republic.
             </div>
             <br />
+            <a target="_blank" href="http://localhost:3000/game">
+                link
+            </a>
             <a href="https://twitter.com/FValch" className="fa fa-twitter" />
             <a href="https://linkedin.com/in/filip-valchář" className="fa fa-linkedin" />
             <a href="https://github.com/XuuRee" className="fa fa-github" />

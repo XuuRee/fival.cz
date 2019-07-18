@@ -9,23 +9,23 @@ type Chapter = {
 }
 
 type Important = {
-    readonly workAtTheBar: boolean | null;
+    readonly workAtTheBar: boolean | null
 }
 
 type Trivial = {
-    readonly isCharacterFine: boolean | null;
+    readonly isCharacterFine: boolean | null
 }
 
 export type Decisions = {
-    readonly important: Important;
-    readonly trivial: Trivial;
+    readonly important: Important
+    readonly trivial: Trivial
 }
 
 export type Game = {
-    readonly kind: "game";
-    readonly tutorial: boolean;
-    readonly chapters: Chapter[];
-    readonly decisions: Decisions;
+    readonly kind: 'game'
+    readonly tutorial: boolean
+    readonly chapters: Chapter[]
+    readonly decisions: Decisions
 }
 
 export default Game

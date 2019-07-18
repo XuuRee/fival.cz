@@ -12,8 +12,8 @@ type AppProps = State
 <div className="point2 point2-position" /> 
 */
 
-const App: React.SFC<AppProps> = ({ type, portfolio }) => {
-    return <div className="app">{type === 'portfolio' ? <Portfolio {...portfolio} /> : <Game />}</div>
+const App: React.SFC<AppProps> = ({ type, portfolio, game }) => {
+    return <div className="app">{type === 'portfolio' ? <Portfolio {...portfolio} /> : <Game {...game} />}</div>
 }
 
 const mapStateToProps = (state: State): AppProps => state

@@ -1,3 +1,9 @@
 .indent {
-	margin-top: 8%; /* need to change for different widths and heights */
+	margin-top: 18%;
+}
+
+@media only screen and (max-width: 1366px) {
+  .indent {
+		margin-top: 8%;
+  }
 }
